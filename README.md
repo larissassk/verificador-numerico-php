@@ -1,33 +1,62 @@
-# Verificador numérico
+# ✨ Verificador Numérico (PHP)
 
-Este projeto é um formulário web que permite verificar as seguintes propriedades de um número inserido pelo usuário:
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="Linguagem PHP">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+</p>
 
-- **Par ou ímpar**  
-- **Redondo ou não**  
-- **Positivo, negativo ou neutro**
+## 💡 Descrição do Projeto
 
-Tecnologias utilizadas:  
-- **HTML5**: Estrutura da página  
-- **CSS**: Estilização  
-- **PHP**: Processamento e validação do número
+Este projeto é uma aplicação web simples e funcional, desenvolvida para demonstrar proficiência no **processamento de formulários** e **lógica condicional** em **PHP**.
 
+A ferramenta recebe um número inteiro fornecido pelo usuário via formulário HTML e realiza uma série de verificações lógicas e matemáticas, apresentando os resultados de forma clara.
 
-**Exemplo de uso**  
-1- Insira um número no campo de preenchimento e envie.  
-2- O formulário vai exibir as informações sobre o número inserido.  
-![img](img/formulario-atv3.png)
+---
 
-## Condições PHP
+## 🚀 Competências e Funcionalidades
 
-O código tem comandos em PHP sendo três condições que faz a verificação do numero inserido pelo usuário e exibe uma mensagem com o comando *echo*.  
-- **Verificação de Par ou Ímpar:** A condição *if ($num % 2 == 0)* verifica se o número inserido pelo usuário é divisível por 2, ou seja, se é par. Se o resto da divisão por 2 for igual a 0, o número é considerado par. Caso contrário, é considerado ímpar.  
-- **Verificação de Número Redondo:** A condição *if ($num % 10 == 0)* verifica se o número inserido pelo usuário é divisível por 10, o que significa que é um número redondo.Se não ele não sera um número redondo.  
-- **Verificação de Positivo, Negativo ou Neutro:** As condições *if ($num > 0)* nela mostra que se o numero for maior que zero sera positivo ou *elseif ($num < 0)* que mostra que o numero  menor que zero sera negativo, caso nao seja essas duas opções o valor será neutro(zero).
-  
-## Referências
+Este trabalho destaca as seguintes habilidades e recursos implementados:
 
- [DevMedia](https://www.devmedia.com.br/css-como-criar-elementos-arredondados/37905): Estilização e botões arredondados  
-- [DaFont](https://www.dafont.com/pt/): Escolha de fontes  
-- [ChatGPT](https://chat.openai.com/): Pesquisa sobre números redondos  
-- [Alura](https://www.alura.com.br/artigos/escrever-bom-readme): Estrutura do README  
-- Código base: [`atd2/par.php`](atd2/par.php)
+* **Processamento de Formulários (`POST`):** Recebimento e tratamento seguro de dados de entrada do usuário.
+* **Lógica Condicional:** Uso eficiente de comandos `if/elseif/else` para tomada de decisões.
+* **Operadores Matemáticos:** Aplicação do operador de **Módulo** (`%`) para análises de divisibilidade.
+* **Organização de Código:** Separação das responsabilidades de *frontend* e *backend* (HTML, CSS e PHP).
+
+### Detalhes das Verificações
+
+| Propriedade | Objetivo | Condição PHP |
+| :--- | :--- | :--- |
+| **Par ou Ímpar** | Determinar se o número é divisível por 2. | `$num % 2 == 0` |
+| **Redondo** | Verificar se o número é múltiplo de 10 (terminado em zero). | `$num % 10 == 0` |
+| **Sinal** | Classificar o número como Positivo, Negativo ou Neutro (zero). | `$num > 0`, `$num < 0` |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **PHP:** Lógica de *backend* e processamento de dados.
+* **HTML5:** Estrutura semântica e formulário de entrada (`<input type="number">`).
+* **CSS:** Estilização da interface para uma experiência de usuário limpa e agradável.
+
+---
+
+## ⚙️ Como Executar
+
+Para rodar o projeto localmente, é necessário ter um ambiente de servidor web com suporte a PHP (como XAMPP, WAMP ou MAMP).
+
+1.  **Clone o Repositório:**
+    ```bash
+    git clone [LINK_DO_SEU_REPOSITÓRIO]
+    ```
+2.  **Organize os Arquivos:** Coloque os arquivos (idealmente `index.php` e `style.css`) na pasta raiz do seu servidor (`htdocs` ou `www`).
+3.  **Acesso:** Abra seu navegador e acesse o endereço do arquivo: `http://localhost/[NOME_DA_PASTA]/index.php`
+
+---
+
+## 🔗 Referências
+
+* **Estilização:** DevMedia
+* **Estrutura de README:** Alura
+
+![Resultado da aplicação após a inserção de um número no formulário.](img/formulario-atv3.png)
