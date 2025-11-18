@@ -59,4 +59,6 @@ Para rodar o projeto localmente, é necessário ter um ambiente de servidor web 
 * **Estilização:** DevMedia
 * **Estrutura de README:** Alura
 
-![Resultado da aplicação após a inserção de um número no formulário.](img/formulario-atv3.png)
+---
+## 📸 Demonstração
+![Resultado da aplicação](img/formulario-atv3.png)
